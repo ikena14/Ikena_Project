@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color:#f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background :linear-gradient(to right , #8B008B,#8A2BE2) ;
+    color:white;
+    padding: 30px;
+    min-height: 70px;
+    border-bottom:2px solid #8B008B ;
+}
+header #brand {
+    float: left;
+}
+header #brand h1{
+    margin: 0px;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header li{
+    
+    display:inline;
+    padding:0 20px 0 20px ;
+}
+header a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+header #brand, header .active a{
+    color:#ffff;
+    font-weight: bold;
+}
+#showcase{
+    min-height: 400px;
+    background: url(../Gambar/brn/Bc.jpg)no-repeat 0px -70px;
+    text-align: center;
+    color:#ec1063;
+}
+#showcase h1{
+    margin-top: 120px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #ec1063;
+}
+#showcase p{
+    font-size: 20px;
+}
+#newsletter{
+    padding:15px;
+    color:#fff;
+    background: linear-gradient(to right,#8A2BE2,#8B008B);
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float:right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.Duk{
+    height: 38px;
+    background-color: #8A2BE2;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#fff;
+}
+#boxes{
+    margin-top: 20px;
+
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background: linear-gradient(to right,#8B008B,#8A2BE2);
+    text-align: center;
+}
+/*Media Query*/
+@media(max-width: 768px){
+    header #brand,
+    header nav,header nav li,
+    #newsletter li,
+    #newsletter form,
+    #boxes .box{
+        float:none;
+        text-align: center;
+        width: 100%;
+
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
